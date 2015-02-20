@@ -9,4 +9,6 @@ v1: of the website does not have a search bar.
 
 v2: added search bar. it searches words on a tweet.
 
+v3: Corrected spelling mistake on app.yaml file 
+
 Copyright group 5
