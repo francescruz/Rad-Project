@@ -65,9 +65,9 @@ html {
 	height: 100%;
 }
 body {
-	font: 14px Arial, Helvetica, sans-serif;
-	width: 100%;
-	height: 100%;
+	font: 15px Arial, Helvetica, sans-serif;
+	width: 50%;
+	height: 50%;
 	margin: 0px;
 	padding: 0px;
 }
