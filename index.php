@@ -22,14 +22,14 @@ function buildAuthorizationHeader($oauth){
 	return $r;
 }
 function returnTweet(){
-	global $coords;
+	global scoords;
 	$oauth_access_token = "519468705-nNHeShU0rkYMO3iJp0zC0UkCiz9VNe4XUaiX40vx";
 	$oauth_access_token_secret = "3znMnOe1iNGPDgu6znlqmDbgrm4gd7zPJjVS4VU54vaBs";
 	$consumer_key = "W8R3m8KpDnNjqZLb1a0TJtGA0";
 	$consumer_secret = "e8qulJOewxqWLwSrpzx4XuDGCsxvneoXIJX4G8eCiPJ99jRxRY";
 	$twitter_timeline = "search/tweets";
 	$request = array(
-		'geocode' => $coords . ',50mi',
+		'geocode' => $coords . ',10mi',
 		'result_type' => 'recent'
 	);
 	if(isset($_GET['q'])) $request['q'] = $_GET['q'];
