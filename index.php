@@ -21,7 +21,7 @@ function buildAuthorizationHeader($oauth){
 	$r .= implode(', ', $values);
 	return $r;
 }
-function returnTweet(){
+functon returnTweet(){
 	global $coords;
 	$oauth_access_token = "519468705-nNHeShU0rkYMO3iJp0zC0UkCiz9VNe4XUaiX40vx";
 	$oauth_access_token_secret = "3znMnOe1iNGPDgu6znlqmDbgrm4gd7zPJjVS4VU54vaBs";
