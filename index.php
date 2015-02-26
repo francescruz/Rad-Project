@@ -61,7 +61,7 @@ function returnTweet(){
 <title>Twitter Locator</title>
 <style>
 html {
-	width: 100%;
+	width: 90%;
 	height: 100%;
 }
 body {
