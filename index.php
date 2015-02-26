@@ -86,7 +86,7 @@ var messages = [];
 var last = -1;
 function toggleDiv(objid){
 	if(last != -1) document.body.removeChild(last);
-	if(objid.getElementsByTagName("p")[0]) objid.getElementsByTagName("p")[0].style.paddingRight = "300px";
+	if(objid.getElementsByTagName("p")[0]) objid.getElementsByTagName("p")[0].style.paddingRight = "320px";
 	document.body.appendChild(objid);
 	last = objid;
 }
