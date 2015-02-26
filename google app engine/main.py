@@ -11,7 +11,7 @@ application = webapp.WSGIApplication([('/.*', AllHandler)])
 def main():
     run_wsgi_app(application)
 
-if __name__ == "__main__":
+if __nae__ == "__main__":
     main()
 
 if __name__ == "__main__":
