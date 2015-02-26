@@ -58,7 +58,7 @@ function returnTweet(){
 ?>
 <!DOCTYPE html>
 <head>
-<title>Twitter Locator</title>
+<title>Twitter To Map</title>
 <style>
 html {
 	width: 100%;
