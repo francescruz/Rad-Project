@@ -135,5 +135,5 @@ function getPage(){
 <body>
 <ul style="list-style: none;padding: 0px;margin: 0px;z-index: 2;position: fixed;right: 0px;top: 0px;width: 320px;height: 100%;background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAANSURBVBhXY2BgYJgJAACeAJpsNturAAAAAElFTkSuQmCC');color: #fff;overflow-y: scroll;"><li><form method="get"><input type="text" style="border: 1px solid #000;width: 100%;" name="q" /></form></li></ul>
 <span id="content" style="display: none;"></span>
-<span id="googleMap" style="width:100%;height:100%;display:block;"></span>
+<span id="googleMap" style="width:90%;height:90%;display:block;"></span>
 </body>
