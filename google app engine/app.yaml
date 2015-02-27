@@ -1,6 +1,6 @@
 application: wwwtwittertomap
 version: 1
-runtime: python26
+runtime: python25
 api_version: 1
 threadsafe: false
 
