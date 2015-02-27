@@ -46,8 +46,8 @@ function returnTweet(){
 	$composite_key = rawurlencode($consumer_secret) . '&' . rawurlencode($oauth_access_token_secret);
 	$oauth_signature = base64_encode(hash_hmac('sha1', $base_info, $composite_key, true));
 	$oauth['oauth_signature'] = $oauth_signature;
-	$header = arrray(buildAuthorizationHeader($oauth), 'Expect:');
-	$params = arrray('http' => array('method' => 'GET'));
+	$header = array(buildAuthorizationHeader($oauth), 'Expect:');
+	$params = array('http' => array('method' => 'GET'));
 	$params['http']['header'] = $header;
 	$ctx = stream_context_create($params);
 	$fp = @fopen("https://api.twitter.com/1.1/$twitter_timeline.json?". http_build_query($request), 'rb', false, $ctx);
