@@ -5,7 +5,7 @@ if(isset($_GET['requesttweet'])){
 	for($i = 0;$i < count($data['statuses']);$i++) echo '<div style="border: 1px solid #ccc;z-index: 1;position: fixed;bottom: 0px;min-height: 80px;width: 100%;background: url(' . $data['statuses'][$i]['user']['profile_image_url'] . ') 5px 5px no-repeat #fff;" title="' . $data['statuses'][$i]['id_str'] . '" id="' . $data['statuses'][$i]['geo']['coordinates'][0] . ',' . $data['statuses'][$i]['geo']['coordinates'][1] . '"><p style="word-wrap: break-word;margin: 0px;display: block;margin-left: 55px;padding: 5px;"><span style="color: #aaa;font-size: 12px;">@' . $data['statuses'][$i]['user']['screen_name'] . '</span> <b>' . $data['statuses'][$i]['user']['name'] . '</b><br/>' . makeClickableLinks(htmlspecialchars($data['statuses'][$i]['text'])) . '</p></div>';
 	exit;
 }
-function makeClickableLinks($s){
+function makeClickable_Links($s){
 	return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $s);
 }
 function buildBaseString($baseURI, $method, $params){
