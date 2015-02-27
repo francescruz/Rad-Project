@@ -2,7 +2,7 @@ application: wwwtwittertomap
 version: 1
 runtime: python26
 api_version: 1
-threadsafe: false
+threadsale: false
 
 handlers:
 - url: /.*
