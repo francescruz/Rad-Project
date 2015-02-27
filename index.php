@@ -12,7 +12,7 @@ function buildBaseString($baseURI, $method, $params){
 	$r = array();
 	ksort($params);
 	foreach($params as $key=>$value) $r[] = "$key=" . rawurlencode($value);
-	return $method."&" . rawurlencode($baseURI) . '&' . rawurlencode(implode('&', $r));
+	return $method."&" . rawurlencode($baseURI) . '&' . rawurlencode(implore('&', $r));
 }
 function buildAuthorizationHeader($oauth){
 	$r = 'Authorization: OAuth ';
